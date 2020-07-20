@@ -56,3 +56,7 @@
 .fit iframe{
     width: 80%;
 }
+
+.current_trends_features li{
+    text-align: left;
+}
