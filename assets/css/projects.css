@@ -22,6 +22,11 @@
     margin-top: 5%;
     margin-left: 1%;
     float: left;
+}
+#main .project-git-links-front-end:hover{
+    margin-top: 5%;
+    margin-left: 1%;
+    float: left;
 
 }
 
@@ -29,7 +34,7 @@
     margin-top: 5%;
     margin-left: 1%;
     float: left;
-
+    color: cyan;
 }
 
 #main .project-git-logo-ul-smaller{

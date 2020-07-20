@@ -12,10 +12,29 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/projects.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript">
+		(
+			function(){
+				window.addEventListener('DOMContentLoaded', (event) => {
+					console.log('Dom loaded and parsed');
+					// Insert loading articles icon here?
+					let labtop_desktop_user = document.body.offsetWidth >= 980;
+					if (labtop_desktop_user == true){
+						document.getElementById("labtop_desktop_user").innerHTML = "true";
+					} else {
+						document.getElementById("labtop_desktop_user").innerHTML = "false";
+					}
+
+					return labtop_desktop_user;
+				})
+			}
+		)();
+		</script>
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
+			<span id="labtop_desktop_user" style="visibility: hidden"></span>
 			<div id="wrapper">
 
 				<!-- Header -->
@@ -56,8 +75,8 @@
 							<a rel="noopener noreferrer" target="_blank" class="project-git-links-back-end button small" href="https://github.com/alanbanks229/current_trends_app_backend">Back-End</a>
 						</li>
 					</ul>
-					<div class="image main">
-							<iframe width="800" height="560" src="https://www.youtube.com/embed/N-hRG1RldIY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe> 
+					<div>
+							<iframe class="labtop" width="800" height="560" src="https://www.youtube.com/embed/N-hRG1RldIY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe> 
 					</div>
 					<p style="color: red;"><b>Update: 6/3/20</b>
 						<br/>
@@ -85,15 +104,15 @@
 						<ul class="project-git-logo-ul-smaller">
 							<li>
 								<h3 class="project-git-logo-smaller icon brands fa-github">Github: </h3>
-								<a rel="noopener noreferrer" target="_blank" class="project-git-links-front-end button small" href="https://github.com/IdleScV/mod4_frontend">Front-End</a>
-								<a rel="noopener noreferrer" target="_blank" class="project-git-links-back-end button small" href="https://github.com/alanbanks229/mod4_backend">Back-End</a>
+								<a rel="noopener noreferrer" target="_blank" class="project-git-links-front-end small button" href="https://github.com/IdleScV/mod4_frontend">Front-End</a>
+								<a rel="noopener noreferrer" target="_blank" class="project-git-links-back-end small button" href="https://github.com/alanbanks229/mod4_backend">Back-End</a>
 							</li>
 						</ul>
-						<div class="image fit">
+						<div>
 							<iframe height="230px" width="560px" src="https://www.youtube.com/embed/4vn4oCgs-wc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe> 
 						</div>
 						<p>An online multiplayer game where users are given a prompt to draw and the winner has the most likes.<br/>
-						<li> Multiple game lobbies!</li>
+						<li>Multiple game lobbies!</li>
 						<li>Play to get the highest rating!</li>
 						</p>
 						<ul class="actions special">
