@@ -10,9 +10,91 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/blogs.css" />
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 
-		<script type ="module" src="assets/js/blog.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+
+		(function(){
+			let profile_image_url;
+			let articles;
+			console.log("blogs page");
+			window.addEventListener('DOMContentLoaded', (event) => {
+				console.log('Dom loaded and parsed');
+				// Insert loading articles icon here?
+				fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@alanbanks229')
+					.then((res) => res.json())
+					.then((data) => {
+						profile_image_url = data.feed.image
+						articles = data.items.filter(item => item.categories.length > 0)
+
+						articles.map((article, index) => {
+							let section = document.getElementsByClassName("post")[0];
+
+							let new_card_container = document.createElement("div");
+							new_card_container.className = "card_container";
+
+							let blog_card_header = document.createElement("div");
+							blog_card_header.className = "blog_card_header";
+
+							let profile_img = document.createElement("img");
+							profile_img.src = profile_image_url;
+							blog_card_header.appendChild(profile_img);
+
+							let article_img = document.createElement("img");
+							article_img.src = article.thumbnail
+							blog_card_header.appendChild(article_img);
+
+							let info_graphics = document.createElement("p");
+							let name_bold = document.createElement("b");
+							name_bold.innerHTML = "Alan Banks";
+							let br = document.createElement("br");
+							let post_date = document.createElement("p")
+							post_date.innerHTML = updateArticlePubDate(article.pubDate);
+							// post_date.innerHTML = article.pubDate;
+							info_graphics.appendChild(name_bold);
+							info_graphics.appendChild(br);
+							info_graphics.appendChild(post_date);
+
+							blog_card_header.appendChild(info_graphics);
+
+							
+							let blog_card_title = document.createElement("div");
+							blog_card_title.className = "blog_card_title";
+							
+							let header = document.createElement("header");
+							let article_title_h3 = document.createElement("h3");
+							article_title_h3.innerHTML = article.title;
+							header.appendChild(article_title_h3);
+							blog_card_title.appendChild(header);
+
+							new_card_container.appendChild(blog_card_header);
+							new_card_container.appendChild(blog_card_title);
+							new_card_container.addEventListener("click", (event) => {
+								redirectToSpecificBlog((article))
+							})
+							section.appendChild(new_card_container);
+							section.appendChild(document.createElement("hr"));
+						})
+
+					})
+				
+			})
+
+			function updateArticlePubDate(publish_string){
+				let new_string = publish_string.split((/,| /), 3)[0]
+
+				let dt = moment(new_string, "YYYY-MM-DD")
+				return dt.fromNow()+' | ' + dt.format('LL')
+			}
+
+			function redirectToSpecificBlog(article){
+				let url = article.link
+				window.open(url, "_blank")
+			}
+		})();
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -52,72 +134,7 @@
 								</header>
 								<hr />
 
-								<!-- <div class="card_container">
-									<div class="blog_card_header">
-										<img src="https://miro.medium.com/fit/c/80/80/1*za8yLgXZlE0smsSqIFqysw.jpeg"/>
-										<p><b>Alan Banks</b><br/>Apr 23 * 3 min read</p>
-									</div>
-									<div class="blog_card_title">
-										<header>
-										<h3>How to: Deploy Rails API backend and React Frontend App online through Heroku</h3>
-										<p>With Rails API backend and Javascript (React) Front-end</p>
-										</header>
-									</div>
-								</div>
-								<hr /> -->
 							</section>
-								<!-- Lists -->
-									<!-- <h2>Lists</h2>
-									<div class="row">
-										<div class="col-6 col-12-small">
-
-											<h3>Unordered</h3>
-											<ul>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Sagittis lorem eleifend.</li>
-												<li>Felis feugiat dolore viverra.</li>
-												<li>Dolor pulvinar etiam.</li>
-											</ul>
-
-											<h3>Alternate</h3>
-											<ul class="alt">
-												<li>Dolor pulvinar etiam etiam.</li>
-												<li>Sagittis adipiscing eleifend.</li>
-												<li>Felis enim dolore viverra.</li>
-												<li>Dolor pulvinar etiam etiam.</li>
-											</ul>
-
-										</div>
-										<div class="col-6 col-12-small">
-
-											<h3>Ordered</h3>
-											<ol>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Etiam vel felis at viverra.</li>
-												<li>Felis enim feugiat magna.</li>
-												<li>Etiam vel felis nullam.</li>
-												<li>Felis enim et tempus.</li>
-											</ol>
-
-											<h3>Icons</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-												<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-											</ul>
-											<ul class="icons alt">
-												<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands alt fa-github"><span class="label">Github</span></a></li>
-												<li><a href="#" class="icon brands alt fa-dribbble"><span class="label">Dribbble</span></a></li>
-											</ul>
-
-										</div>
-									</div> -->
-
 
 				<!-- Copyright -->
 					<div id="copyright">
@@ -134,6 +151,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
 
 	</body>
 </html>

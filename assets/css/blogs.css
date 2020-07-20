@@ -1,0 +1,50 @@
+#main .card_container:hover{
+    animation-duration: .5s;
+    animation-name: user_hover;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+
+@keyframes user_hover{
+    from{
+        padding: 0px;
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 2px solid #000000;
+    }
+    to{
+        padding: 10px;
+        background-color: rgba(122, 176, 184, 0.8);
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 2px solid #1100ff;
+    }
+}
+
+#main .card_container{
+    animation-duration: .5s;
+    animation-name: revert;
+    animation-fill-mode: forwards;
+}
+
+@keyframes revert{
+    from{
+        padding: 10px;
+        background-color: rgba(122, 176, 184, 0.8);
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 2px solid #1100ff;
+    }
+    to{
+        padding: 0px;
+        background-color: none;
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 2px solid #000000;
+    }
+}

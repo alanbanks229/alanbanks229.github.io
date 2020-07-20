@@ -1,8 +1,7 @@
 import moment from 'moment';
-
 let profile_image_url;
 let articles;
-
+console.log("blogs page");
 window.addEventListener('DOMContentLoaded', (event) => {
     console.log('Dom loaded and parsed');
     // Insert loading articles icon here?
@@ -76,46 +75,3 @@ function redirectToSpecificBlog(article){
     let url = article.link
     window.open(url, "_blank")
 }
-
-//     return (
-//         <>
-//         <div id="main">
-//         { profileImage && article ? 
-        
-//             <section className="post">
-//                 <header className="major">
-//                 {document.body.offsetWidth >= 980 ? 
-//                 (<h1><a href="https://medium.com/@alanbanks229">Check out my Blogs<br />
-//                                                                 on Medium</a></h1>) : 
-//                 (<h1><a href="https://medium.com/@alanbanks229">Check out<br/> my
-//                                                                 Blogs
-// 					                                            <p style={{textAlign: "center"}}>on Medium</p></a></h1>)}
-//                 </header>
-//             <hr />
-//             {article.map((article, index) => (
-//                 <>
-//                 <div className="card_container" onClick={()=> redirectToSpecificBlog((article))}>
-//                     <div class="blog_card_header">
-//                         <img src={profileImage}/>
-//                     <img src={article.thumbnail}/>
-//                         <p><b>Alan Banks</b>
-//                         <br/>
-//                         {updateArticlePubDate(article.pubDate)}
-//                         </p>
-//                     </div>
-
-//                     <div className="blog_card_title">
-//                         <header>
-//                             <h3>{article.title}</h3>
-//                         </header>
-//                     </div>
-
-//                 </div>
-//                 <hr />
-//                 </>
-//             ))}
-//             </section> : null }
-//         </div>
-//         </>
-//     )
-// }
