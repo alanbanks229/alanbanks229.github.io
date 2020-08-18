@@ -9,3 +9,13 @@
 #main .post .float_link_right{
     float: right;
 }
+
+/* targetting github repo link buttons */
+#main .post .box ul li a{
+    color: rgb(23, 191, 239)!important;
+    /* font-size: 8px; */
+}
+
+#main .post .box ul li{
+    font-size: small;
+}
