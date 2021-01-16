@@ -1,5 +1,14 @@
+#main .post .box .technical_skills_row{
+    display: inline-flex;
+}
+
 #main .post .box .technical_skills_p{
-    text-align: center;
+    margin-left: 5%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+#main .post .box .technical_skills_type{
+    margin-left: 2.5%;
 }
 
 #main .post .box .resume_heading{
@@ -16,6 +25,22 @@
     /* font-size: 8px; */
 }
 
+.remove_p_bottom_padding{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.company_heading_container_experience{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.align_history_right{
+    margin-left: auto;
+    color: rgb(58, 55, 55);
+}
+
 #main .post .box ul li{
-    font-size: small;
+    font-size: medium;
 }
