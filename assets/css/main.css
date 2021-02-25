@@ -2588,12 +2588,6 @@ input, select, textarea {
 
 /* Image */
 
-	.image {
-		border: 0;
-		display: inline-block;
-		position: relative;
-	}
-
 		.image img {
 			display: block;
 		}
@@ -3325,15 +3319,21 @@ input, select, textarea {
 			margin-bottom: 1%;
 		}
 
-		#main .inline-block{
+		#main .inline_block{
 			list-style: none;
 			display: flex;
 		}
-		
-		#main .make_imgbigger{
-			flex: 33.33%;
-			height: 100%;
-			width: 100%;
+
+		.about_images_container {
+			/* border: red solid 3px; */
+			display: flex;
+		}
+
+		#main .about_images_container .resize_img_inline{
+			height: auto;
+			width: 47%;
+			border: #212931 solid 2px;
+			border-radius: 3rem;
 		}
 
 		#intro .top-profile-down-logo-div{
@@ -3646,7 +3646,7 @@ input, select, textarea {
 		overflow: hidden;
 		padding: 0 2rem 0 0;
 		position: relative;
-		width: calc(100% - 4rem);
+		width: calc(75% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
 	}
@@ -3783,7 +3783,7 @@ input, select, textarea {
 		background-color: #ffffff;
 		position: relative;
 		margin: 0 auto;
-		width: calc(100% - 4rem);
+		width: calc(75% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
 	}
@@ -3822,10 +3822,6 @@ input, select, textarea {
 
 		#main > footer {
 			text-align: center;
-		}
-
-		#main > .post {
-			padding: 8rem 8rem 6rem 8rem ;
 		}
 
 			#main > .post header.major > .date {
