@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/build/static/css/main.073c9b0a.css",
-    "main.js": "/build/static/js/main.24453f3e.js",
-    "static/js/787.55ecf1c3.chunk.js": "/build/static/js/787.55ecf1c3.chunk.js",
-    "static/media/logo.svg": "/build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/build/index.html",
-    "main.073c9b0a.css.map": "/build/static/css/main.073c9b0a.css.map",
-    "main.24453f3e.js.map": "/build/static/js/main.24453f3e.js.map",
-    "787.55ecf1c3.chunk.js.map": "/build/static/js/787.55ecf1c3.chunk.js.map"
+    "main.css": "/alanbanks229.github.io/static/css/main.073c9b0a.css",
+    "main.js": "/alanbanks229.github.io/static/js/main.9448b188.js",
+    "static/js/787.55ecf1c3.chunk.js": "/alanbanks229.github.io/static/js/787.55ecf1c3.chunk.js",
+    "static/media/logo.svg": "/alanbanks229.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/alanbanks229.github.io/index.html",
+    "main.073c9b0a.css.map": "/alanbanks229.github.io/static/css/main.073c9b0a.css.map",
+    "main.9448b188.js.map": "/alanbanks229.github.io/static/js/main.9448b188.js.map",
+    "787.55ecf1c3.chunk.js.map": "/alanbanks229.github.io/static/js/787.55ecf1c3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.24453f3e.js"
+    "static/js/main.9448b188.js"
   ]
 }
