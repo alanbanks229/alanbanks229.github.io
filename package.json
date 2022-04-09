@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/alanbanks229/alanbanks229.github.io#readme",
   "dependencies": {
-    "moment": "^2.27.0"
+    "moment": "^2.29.2"
   }
 }
