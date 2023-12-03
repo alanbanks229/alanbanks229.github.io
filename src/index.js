@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Projects from './routes/project';
-import Blogs from './routes/blogs';
-import Resume from './routes/resume';
-import About from './routes/index';
+import Projects from './routes/Project';
+import Blogs from './routes/Blogs';
+import Resume from './routes/Resume';
+import Home from './routes/Home.jsx';
 
 import { 
   BrowserRouter,
@@ -15,8 +15,8 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<About/>}/>
-        <Route path="/about" element={<About/>} />
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<Home/>} />
         <Route path="/resume" element={<Resume/>} />
         <Route path="/blogs" element={<Blogs/>} />
         <Route path="/projects" element={<Projects/>} />

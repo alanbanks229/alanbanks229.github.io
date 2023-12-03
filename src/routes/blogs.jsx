@@ -93,11 +93,6 @@ export default function Blogs(){
 
 							</section>
             </div>
-
-				{/* <!-- Copyright --> */}
-				<div id="copyright">
-					<ul><li>&copy; 2022 All rights reserved.</li><li>Design from: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-				</div>
     </main>
   )
 }

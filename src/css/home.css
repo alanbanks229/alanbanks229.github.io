@@ -1,0 +1,17 @@
+/* Apply the spinning animation on hover */
+/* .spin-logo:hover { animation: spin 10s linear infinite } */
+
+.spin-logo {
+  animation: spin 9s linear infinite;
+  /* transition: transform 0.5s ease-in-out; Add a transition to the transform property */
+}
+
+/* Define the spinning animation using keyframes */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

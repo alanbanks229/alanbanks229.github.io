@@ -27,13 +27,9 @@ export default function Resume(){
 						<header>
 							<h2>Resumé</h2>
 						</header>
-            <a href="../images/Alan_Banks_Resume.pdf" className="button small" download>Download PDF Here</a>
+            <a href="../images/AlanBanks Resume 2024.pdf" className="button small" download>Download PDF Here</a>
 					</section>
 		
-				</div>
-
-				<div id="copyright">
-					<ul><li>&copy; 2022 All rights reserved.</li><li>Design from: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 				</div>
     </main>
   )

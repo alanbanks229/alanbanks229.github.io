@@ -1,8 +1,27 @@
 import { Link } from "react-router-dom"
 import SocialMediaLinks from "../components/social_media_links"
 import PortfolioHeader from "../components/MyPortfolioHeader"
+import '../css/home.css';
+
+const reactLogo = "../images/react-1-logo-png-transparent.png";
 
 export default function Home(){
+
+  const styles = {
+    header: {
+      width: '100%',
+    },
+    title: {
+      display: 'flex',
+      justifyContent: 'center',
+    },
+    reactLogo: {
+      width: '53px',
+      height: '53px',
+      marginLeft: '5px',
+    },
+  }
+
   return (
       <main>
           {/* <!-- Header --> */}
@@ -23,8 +42,11 @@ export default function Home(){
           <div id="main">
 
             <section className="post">
-              <header>
-                <h2 style={{textAlign: "center"}}>🎵 Musician turned Software Engineer 💻</h2>
+              <header style={styles.header}>
+                <div style={styles.title}>
+                  <h2 style={{flexDirection: 'row'}}>🎵 Musician turned Software Engineer</h2>
+                  <img src={reactLogo} className="spin-logo" style={styles.reactLogo}/>
+                </div>
               </header>
               <p style={{width: "100%"}}>
                 From a young age, I enjoyed singing, playing piano, and using technology to create interesting sounds with MIDI.
@@ -42,9 +64,6 @@ export default function Home(){
         {/* <!-- Footer --> */}
 
         {/* <!-- Copyright --> */}
-          <div id="copyright">
-            <ul><li>&copy; 2022 All rights reserved.</li><li>Design from: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-          </div>
       </main>
   )
 }
