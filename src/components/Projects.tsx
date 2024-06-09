@@ -91,7 +91,7 @@ const Projects = () => {
                                     duration-500 ml-2
                                     sticky block group
                                 "
-                                href="https://github.com/alanbanks229/current_trends_app_frontend"
+                                href="https://github.com/alanbanks229/alanbanks229.github.io"
                             >
                                 Source Code
                                 <span
