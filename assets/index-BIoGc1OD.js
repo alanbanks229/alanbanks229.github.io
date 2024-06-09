@@ -220,7 +220,7 @@ Error generating stack: `+o.message+`
                                     text-BurntOrange
                                     duration-500 ml-2
                                     sticky block group
-                                `,href:"https://github.com/alanbanks229/current_trends_app_frontend",children:["Source Code",h.jsx("span",{className:`
+                                `,href:"https://github.com/alanbanks229/alanbanks229.github.io",children:["Source Code",h.jsx("span",{className:`
                                         absolute left-0 bottom-0 w-full h-0.5 bg-SunsetOrange
                                         transform scale-x-0 group-hover:scale-x-100
                                         transition-transform duration-500
