@@ -31,7 +31,7 @@ const About = () => {
                             &emsp;My path to Software Engineering/Web Development has been anything but typical.
                             Growing up in a family of medical professionals, I initially expected to follow a similar path.
                             However, my true passions for music and computer science led me in a different direction.
-                            Today, I proudly hold degrees in both Music and Computer Science :D
+                            Today, I proudly hold degrees in both Music and Computer Science :)
                             <br/><br/>
                             In my professional life, I am a dedicated and versatile full-stack developer with a strong focus
                             on creating performant and user-friendly web applications. I have over 4 years of professional experience and
