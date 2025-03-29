@@ -1,7 +1,7 @@
 import { SectionIDs } from '../constants';
 import { IoMdDownload } from "react-icons/io";
 import profilePic from "../assets/Alan/AlanBanksPortrait.png";
-import AlanResume from "../assets/Alan/AlanBanks Resume 2024.pdf";
+import AlanResume from "../assets/Alan/AlanBanks_Resume_2025.pdf";
 import { motion } from "framer-motion"
 
 const AnimationVariants = (startXPos: number, delaySeconds: number, ) => ({
