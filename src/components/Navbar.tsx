@@ -7,7 +7,7 @@ import { FaInstagram } from "react-icons/fa6";
 import AlanProfile from "../assets/Alan/AlanBanksPortrait.png"
 import AnchorButton from './AnchorButton';
 import { NavbarSections, SectionIDs } from '../constants';
-import PorfolioLogo from './HeroLogo';
+import PorfolioLogo from './IntroPicture';
 import { throttle } from '../helpers';
 import { useTheme } from '../ThemeProvider';
 import ThemeToggleBtn from './ThemeToggleBtn';
@@ -15,7 +15,7 @@ import ThemeToggleBtn from './ThemeToggleBtn';
 const FloatNavbar = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
     const [selectedAnchor, setSelectedAnchor] = useState<string>('');
-    const {isDarkMode} = useTheme();
+    const { isDarkMode } = useTheme();
 
     const toggleMobileMenu = () => {
         setMobileMenuOpen(!mobileMenuOpen)
@@ -107,11 +107,10 @@ const FloatNavbar = () => {
             className="
                 p-4
                 fixed w-full z-20 top-0 start-0
-                dark:bg-MidnightDarkBlue
-                bg-DriftwoodBeige
             "
             style={{
                 borderBottom: `${isDarkMode ? `solid rgba(249, 116, 75, 0.7) 3px` : 'solid rgba(249, 116, 75, 0.4) 5px'}`,
+                background: `${isDarkMode ? 'rgb(5 17 30)' : 'rgba(214, 196, 176, 1)'}`,
                 borderBottomRightRadius: '1.5rem',
                 borderBottomLeftRadius: '1.5rem',
             }}
@@ -127,17 +126,17 @@ const FloatNavbar = () => {
                     onClick={onLogoClick}
                 />
                 <div className="flex flex-row md:order-2 md:space-x-0 rtl:space-x-reverse items-center justify-center">
-                    <ThemeToggleBtn/>
-                    <RxDividerVertical className='md:flex hidden transition-colors duration-300' size={60} color={`${isDarkMode ? 'rgba(249, 116, 75, 0.7)': 'black'}`}/>
+                    <ThemeToggleBtn />
+                    <RxDividerVertical className='md:flex hidden transition-colors duration-300' size={60} color={`${isDarkMode ? 'rgba(249, 116, 75, 0.7)' : 'black'}`} />
                     <div className="md:flex gap-4 text-2xl hidden">
                         <a href="https://www.linkedin.com/in/alan-banks/" target="_blank" rel="noopener noreferrer">
-                            <FaLinkedin className="hover:text-SunsetOrange transition-all duration-300" size={30}/>
+                            <FaLinkedin className="hover:text-SunsetOrange transition-all duration-300" size={30} />
                         </a>
                         <a href="https://github.com/alanbanks229" target="_blank" rel="noopener noreferrer">
-                            <FaGithub className="hover:text-SunsetOrange transition-all duration-300" size={30}/>
+                            <FaGithub className="hover:text-SunsetOrange transition-all duration-300" size={30} />
                         </a>
                         <a href="https://www.instagram.com/alan_got_banks/" target="_blank" rel="noopener noreferrer">
-                            <FaInstagram className="hover:text-SunsetOrange transition-all duration-300" size={30}/>
+                            <FaInstagram className="hover:text-SunsetOrange transition-all duration-300" size={30} />
                         </a>
                     </div>
                     <button

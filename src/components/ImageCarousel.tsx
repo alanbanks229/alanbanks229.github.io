@@ -2,6 +2,7 @@
 import ArizonaJPG from '../assets/Alan/Arizona.jpeg';
 import Philippines from '../assets/Alan/missions_1.jpg';
 import Mount_Rainier from '../assets/Alan/MtRainier.jpg';
+import Maui_Pic from '../assets/Alan/AlanBanksCropped.jpg'
 import Singing from '../assets/Alan/singingExchange.jpg';
 
 import { useState } from 'react';
@@ -11,9 +12,10 @@ import { MINIMAL } from '../constants';
 import { useTheme } from '../ThemeProvider';
 
 const slides = [
+  { url: Maui_Pic },
   { url: ArizonaJPG },
-  { url: Philippines },
   { url: Singing },
+  { url: Philippines },
   { url: Mount_Rainier },
 ];
 
@@ -21,7 +23,7 @@ const slides = [
 const ImageCarousel = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const {isDarkMode} = useTheme();
+  const { isDarkMode } = useTheme();
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
@@ -89,7 +91,7 @@ const ImageCarousel = () => {
               size={40}
               color={
                 `${slideIndex === currentIndex ?
-                  (isDarkMode ?  MINIMAL.BurntOrange : MINIMAL.OceanZoneTeal) :
+                  (isDarkMode ? MINIMAL.BurntOrange : MINIMAL.OceanZoneTeal) :
                   MINIMAL.DriftwoodBeige}
                 `}
             />

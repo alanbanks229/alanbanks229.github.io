@@ -1,6 +1,6 @@
 
 export const SectionIDs = {
-  HOME: 'HeroContainer',
+  HOME: 'IntroContainer',
   ABOUT: 'AboutContainer',
   TECH: 'TechnologiesContainer',
   EXPERIENCE: 'ExperiencesContainer',
@@ -27,12 +27,18 @@ export const MINIMAL = {
 
   SoftBeige: "rgba(225, 217, 207, 1)",    // #e1d9cf
   DriftwoodBeige: "rgba(214, 196, 176, 1)",// #d6c4b0
-  
+
   LightGray: "rgba(237, 237, 237, 1)",    // #ededed
   WarmGray: "rgba(237, 230, 223, 1)",     // #ede6df
-}
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+  // Other Dark Mode suggestions
+  DeepEmerald: "rgba(12, 55, 50, 1)",     // #0c3732
+  ShadowForest: "rgba(6, 32, 30, 1)",     // #061e1e
+
+  DarkViolet: "rgba(36, 20, 50, 1)",      // #241432
+  ObsidianBlue: "rgba(18, 24, 38, 1)",    // #121826
+
+}
 
 export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
 

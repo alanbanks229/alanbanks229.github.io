@@ -42,7 +42,7 @@ const Projects = () => {
     return (
         <div
             id={SectionIDs.PROJECTS}
-            className="border-b border-neutral-900"
+            className="border-b border-neutral-900 dark:border-b-MacbookMidnight"
             style={{
                 paddingBottom: `${paddingBottom}px`,
             }}
@@ -68,11 +68,11 @@ const Projects = () => {
                         className="md:ml-auto md:w-3/6 w-full"
                     >
 
-                            <img
-                                alt="Portfolio Project"
-                                className="w-full h-[460px] rounded-xl border-l border-y border-MidnightDarkBlue md:block hidden"
-                                src={vite_tailwind_portfolio}
-                            />
+                        <img
+                            alt="Portfolio Project"
+                            className="w-full h-[460px] rounded-xl border-l border-y border-MidnightDarkBlue md:block hidden"
+                            src={vite_tailwind_portfolio}
+                        />
                     </motion.div>
                     <motion.div
                         whileInView={{ opacity: 1, x: 0 }}
@@ -82,7 +82,7 @@ const Projects = () => {
                     >
                         <h3 className="mb-2 text-2xl font-semibold text-OceanZoneTeal text-center">My Personal Portfolio :)</h3>
                         <div className="flex flex-row mt-6 justify-center text-center align-middle">
-                            <FaGithub size={30} color={MINIMAL.MacbookMidnight}/><p className="ml-2 text-xl dark:text-MidnightDarkBlue">Github:</p>
+                            <FaGithub size={30} color={MINIMAL.MacbookMidnight} /><p className="ml-2 text-xl dark:text-MidnightDarkBlue">Github:</p>
                             <a rel="noopener noreferrer" target="_blank"
                                 className="
                                     pt-[2px]
@@ -103,7 +103,7 @@ const Projects = () => {
                                 />
                             </a>
                         </div>
-                        <p className="w-5/6 mt-14 mb-8 text-OceanZoneTeal">
+                        <p className="w-5/6 mt-14 text-OceanZoneTeal">
                             My Website portfolio built from the ground up showcasing my Projects, Skills and Experience!
                         </p>
                         <span>Built with:</span>
@@ -113,7 +113,7 @@ const Projects = () => {
                             <li>Tailwind</li>
                             <li>Vite</li>
                         </ul>
-                        <p className="font-extralight mt-1 ml-1 dark:text-MacbookMidnight">Last Updated: June 1, 2024</p>
+                        <p className="font-extralight mt-12 ml-1 dark:text-MacbookMidnight">Last Updated: June 1, 2024</p>
                     </motion.div>
                 </div>
 
@@ -126,12 +126,12 @@ const Projects = () => {
                         className="md:ml-auto md:w-3/6 w-full"
                     >
 
-                            <iframe
-                                title="Current Trends Youtube"
-                                className="w-full h-[460px] rounded-xl border-2 border-MidnightDarkBlue md:block hidden"
-                                src="https://www.youtube.com/embed/N-hRG1RldIY?rel=0&modestbranding=1&iv_load_policy=3"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen">
-                            </iframe>
+                        <iframe
+                            title="Current Trends Youtube"
+                            className="w-full h-[460px] rounded-xl border-2 border-MidnightDarkBlue md:block hidden"
+                            src="https://www.youtube.com/embed/N-hRG1RldIY?rel=0&modestbranding=1&iv_load_policy=3"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen">
+                        </iframe>
                     </motion.div>
                     <motion.div
                         whileInView={{ opacity: 1, x: 0 }}
@@ -141,7 +141,7 @@ const Projects = () => {
                     >
                         <h3 className="mb-2 text-2xl font-semibold text-OceanZoneTeal text-center">Current Trends</h3>
                         <div className="flex flex-row mt-6 justify-center text-center align-middle">
-                            <FaGithub size={30} color={MINIMAL.MacbookMidnight}/><p className="ml-2 text-xl dark:text-MidnightDarkBlue">Github:</p>
+                            <FaGithub size={30} color={MINIMAL.MacbookMidnight} /><p className="ml-2 text-xl dark:text-MidnightDarkBlue">Github:</p>
                             <a rel="noopener noreferrer" target="_blank"
                                 className="
                                     pt-[2px]
@@ -188,7 +188,7 @@ const Projects = () => {
                             <li>Utilizes Geolocation to obtain local news.</li>
                             <li>Get your local 5-day weather forecast.</li>
                         </ul>
-                        <p className="font-extralight mt-1 ml-1 dark:text-MacbookMidnight">Last Updated: 4 years ago</p>
+                        <p className="font-extralight mt-16 ml-1 dark:text-MacbookMidnight">Last Updated: 4 years ago</p>
                     </motion.div>
                 </div>
 
@@ -201,12 +201,12 @@ const Projects = () => {
                         className="md:ml-auto md:w-3/6 w-full"
                     >
 
-                            <iframe
-                                title="Current Trends Youtube"
-                                className="w-full h-[460px] rounded-xl border-2 border-MidnightDarkBlue md:block hidden"
-                                src="https://www.youtube.com/embed/4vn4oCgs-wc?rel=0&modestbranding=1&iv_load_policy=3"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen">
-                            </iframe>
+                        <iframe
+                            title="Current Trends Youtube"
+                            className="w-full h-[460px] rounded-xl border-2 border-MidnightDarkBlue md:block hidden"
+                            src="https://www.youtube.com/embed/4vn4oCgs-wc?rel=0&modestbranding=1&iv_load_policy=3"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen">
+                        </iframe>
                     </motion.div>
                     <motion.div
                         whileInView={{ opacity: 1, x: 0 }}
@@ -216,7 +216,7 @@ const Projects = () => {
                     >
                         <h3 className="mb-2 text-2xl font-semibold text-OceanZoneTeal text-center">Draw Off</h3>
                         <div className="flex flex-row mt-6 justify-center text-center align-middle">
-                            <FaGithub size={30} color={MINIMAL.MacbookMidnight}/><p className="ml-2 text-xl dark:text-MidnightDarkBlue">Github:</p>
+                            <FaGithub size={30} color={MINIMAL.MacbookMidnight} /><p className="ml-2 text-xl dark:text-MidnightDarkBlue">Github:</p>
                             <a rel="noopener noreferrer" target="_blank"
                                 className="
                                     pt-[2px]
@@ -262,7 +262,7 @@ const Projects = () => {
                             <li>Multiple game lobbies!</li>
                             <li>Play to get the highest rating!</li>
                         </ul>
-                        <p className="font-extralight mt-1 ml-1 dark:text-MacbookMidnight">Last Updated: 4 years ago</p>
+                        <p className="font-extralight mt-20 ml-1 dark:text-MacbookMidnight">Last Updated: 4 years ago</p>
                     </motion.div>
                 </div>
 
@@ -275,11 +275,11 @@ const Projects = () => {
                         className="md:ml-auto md:w-3/6 w-full"
                     >
 
-                            <img
-                                alt="Portfolio Project"
-                                className="w-full h-[460px] rounded-xl border-l border-y border-MidnightDarkBlue md:block hidden"
-                                src={ASKIT}
-                            />
+                        <img
+                            alt="Portfolio Project"
+                            className="w-full h-[460px] rounded-xl border-l border-y border-MidnightDarkBlue md:block hidden"
+                            src={ASKIT}
+                        />
                     </motion.div>
                     <motion.div
                         whileInView={{ opacity: 1, x: 0 }}
@@ -289,7 +289,7 @@ const Projects = () => {
                     >
                         <h3 className="mb-2 text-2xl font-semibold text-OceanZoneTeal text-center">Askit (Forum)</h3>
                         <div className="flex flex-row mt-6 justify-center text-center align-middle">
-                            <FaGithub size={30} color={MINIMAL.MacbookMidnight}/><p className="ml-2 text-xl dark:text-MidnightDarkBlue">Github:</p>
+                            <FaGithub size={30} color={MINIMAL.MacbookMidnight} /><p className="ml-2 text-xl dark:text-MidnightDarkBlue">Github:</p>
                             <a rel="noopener noreferrer" target="_blank"
                                 className="
                                     pt-[2px]
@@ -315,7 +315,7 @@ const Projects = () => {
                             <li>Basically Reddit</li>
                             <li>Built with Ruby on Rails</li>
                         </ul>
-                        <p className="font-extralight mt-1 ml-1 dark:text-MacbookMidnight">Last Updated: 4 years ago</p>
+                        <p className="font-extralight mt-16 ml-1 dark:text-MacbookMidnight">Last Updated: 4 years ago</p>
                     </motion.div>
                 </div>
             </div>

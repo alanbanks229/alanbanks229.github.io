@@ -44,7 +44,7 @@ function randomBool(): boolean {
 }
 
 const generateVariants = (): Variants => ({
-    INITIAL_STATE: randomBool() ? {y: -4} : {y: 4},
+    INITIAL_STATE: randomBool() ? { y: -4 } : { y: 4 },
     ANIMATION: {
         y: randomBool() ? [-4, 4] : [4, -4],
         rotate: randomBool() ? [-3, 3] : [3, -3],
@@ -59,13 +59,13 @@ const generateVariants = (): Variants => ({
 
 const Technologies = () => {
     return (
-        <div id={SectionIDs.TECH} className="border-b border-neutral-800">
+        <div id={SectionIDs.TECH} className="border-b border-neutral-800 dark:border-b-MacbookMidnight">
             <div className="flex flex-col pb-24 items-center">
 
                 <motion.h1
-                    whileInView={{ opacity: 1, y: 0}}
-                    initial={{ opacity: 0, y: -100}}
-                    transition={{duration: 1.5}}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    initial={{ opacity: 0, y: -100 }}
+                    transition={{ duration: 1.5 }}
                     className="my-20 text-center text-4xl"
                 >
                     Technologies
@@ -73,9 +73,9 @@ const Technologies = () => {
 
                 {/* Web Technologies */}
                 <motion.div
-                    whileInView={{ opacity: 1, x: 0}}
-                    initial={{ opacity: 0, x: -100}}
-                    transition={{duration: 1.5}}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, x: -100 }}
+                    transition={{ duration: 1.5 }}
                     className="flex flex-wrap lg:justify-center items-center w-10/12 pb-4 mb-4"
                     style={{
                         borderBottom: `1px solid rgba(237,237,237,0.05)`,
@@ -174,9 +174,9 @@ const Technologies = () => {
 
                 {/* Languages: */}
                 <motion.div
-                    whileInView={{ opacity: 1, x: 0}}
-                    initial={{ opacity: 0, x: -100}}
-                    transition={{duration: 1.5}}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, x: -100 }}
+                    transition={{ duration: 1.5 }}
                     className="flex flex-wrap lg:justify-center items-center w-10/12 pb-4 mb-4"
                     style={{
                         borderBottom: `1px solid rgba(237,237,237,0.05)`,
@@ -251,9 +251,9 @@ const Technologies = () => {
 
                 {/* Databases */}
                 <motion.div
-                    whileInView={{ opacity: 1, x: 0}}
-                    initial={{ opacity: 0, x: -100}}
-                    transition={{duration: 1.5}}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, x: -100 }}
+                    transition={{ duration: 1.5 }}
                     className="flex flex-wrap lg:justify-center items-center w-10/12 pb-4 mb-4"
                     style={{
                         borderBottom: `1px solid rgba(237,237,237,0.05)`,
@@ -305,9 +305,9 @@ const Technologies = () => {
 
                 {/* Other: */}
                 <motion.div
-                    whileInView={{ opacity: 1, x: 0}}
-                    initial={{ opacity: 0, x: -100}}
-                    transition={{duration: 1.5}}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, x: -100 }}
+                    transition={{ duration: 1.5 }}
                     className="flex flex-wrap lg:justify-center items-center w-10/12 pb-4 mb-4"
                     style={{
                         borderBottom: `1px solid rgba(237,237,237,0.05)`,
